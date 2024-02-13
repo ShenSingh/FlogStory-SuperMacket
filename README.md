@@ -28,7 +28,7 @@ Super Market is a mini JavaFX project aimed at simulating a supermarket manageme
 
 3. Set up JDK 17 in the project configuration.
 
-4. Run the `Main.java` file to start the application.
+4. Run the `LonchurWapper.java` file to start the application.
 
 5. Follow the on-screen instructions to navigate through the application.
 
