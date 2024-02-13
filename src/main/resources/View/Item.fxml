@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="370.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ZenVeus.JavaFx.Controllers.ItemController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="582.0" style="-fx-background-color: #F1948A;">
+         <children>
+            <Text fill="#2c3e50" layoutX="162.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Item Registation">
+               <font>
+                  <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="55.0" fitWidth="59.0" layoutX="527.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logos/logo-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="90.0" layoutX="242.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons/itemReg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="itemIdText" layoutX="176.0" layoutY="165.0" prefHeight="24.0" prefWidth="225.0" promptText="Item Id" style="-fx-background-color: transpanent; -fx-border-color: #243240; -fx-border-width: 1px 2px 2px 1px; -fx-border-radius: 7px;" />
+      <TextField fx:id="itemNameText" layoutX="25.0" layoutY="215.0" prefHeight="24.0" prefWidth="225.0" promptText="Item Name" style="-fx-background-color: transpanent; -fx-border-color: #243240; -fx-border-width: 1px 2px 2px 1px; -fx-border-radius: 7px;" />
+      <TextField fx:id="itemSupIdText" layoutX="328.0" layoutY="215.0" prefHeight="24.0" prefWidth="225.0" promptText="Supplier Id" style="-fx-background-color: transpanent; -fx-border-color: #243240; -fx-border-width: 1px 2px 2px 1px; -fx-border-radius: 7px;" />
+      <TextField fx:id="itemQuantityText" layoutX="330.0" layoutY="287.0" prefHeight="24.0" prefWidth="225.0" promptText="Qntity" style="-fx-background-color: transpanent; -fx-border-color: #243240; -fx-border-width: 1px 2px 2px 1px; -fx-border-radius: 7px;" />
+      <TextField fx:id="itemPriceText" layoutX="24.0" layoutY="287.0" prefHeight="24.0" prefWidth="225.0" promptText="Price" style="-fx-background-color: transpanent; -fx-border-color: #243240; -fx-border-width: 1px 2px 2px 1px; -fx-border-radius: 7px;" />
+      <Button layoutX="213.0" layoutY="331.0" mnemonicParsing="false" onAction="#itemRegBtn" prefHeight="24.0" prefWidth="149.0" style="-fx-background-color: #F1948A; -fx-background-radius: 8px; -fx-border-color: #243240; -fx-border-radius: 8px; -fx-border-width: 1px 2px 2px 1px;" text="Register" textFill="#243240">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

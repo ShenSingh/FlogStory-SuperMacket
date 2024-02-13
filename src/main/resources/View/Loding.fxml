@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ZenVeus.JavaFx.Controllers.LodingController">
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="327.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+
+      <Image url="@../image/icons/loding.gif" />
+   </ImageView>
+</AnchorPane>

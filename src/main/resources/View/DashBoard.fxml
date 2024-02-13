@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ZenVeus.JavaFx.Controllers.DashBoardController">
+   <AnchorPane layoutY="-1.0" prefHeight="510.0" prefWidth="225.0" style="-fx-background-color: #EC7063;">
+      <ImageView fitHeight="101.0" fitWidth="94.0" layoutX="60.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/icons/icons8-user-50.png" />
+      </ImageView>
+      <Text fx:id="dashUserName" fill="#2c3e50" layoutX="81.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="admin">
+         <font>
+            <Font name="Gayathri Regular" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="43.0" layoutY="461.0" mnemonicParsing="false" onAction="#logOutBtn" prefHeight="24.0" prefWidth="141.0" style="-fx-background-color: #2C3E50;" text="LogOut" textFill="#c62929" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="52.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/icons/customer.png" />
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="52.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/icons/item.png" />
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="50.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/icons/supplier.png" />
+      </ImageView>
+      <Button layoutX="65.0" layoutY="186.0" mnemonicParsing="false" onAction="#customerBtn" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: transpanent;" text="Customers" textFill="#2c3e50">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="44.0" layoutY="237.0" mnemonicParsing="false" onAction="#itemBtn" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: transpanent;" text="Items" textFill="#2c3e50">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="59.0" layoutY="288.0" mnemonicParsing="false" onAction="#supplierBtn" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: transpanent;" text="Suppliers" textFill="#2c3e50">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="120.0" layoutY="490.0" mnemonicParsing="false" onAction="#ShenSingh" style="-fx-background-color: transpanent;" text="Dev by ShenSingh" textFill="#322e4a">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Button>
+   </AnchorPane>
+   <AnchorPane layoutX="224.0" prefHeight="506.0" prefWidth="581.0" style="-fx-background-color: #F4F6F9;">
+      <AnchorPane cache="true" cacheHint="SPEED" depthTest="ENABLE" prefHeight="45.0" prefWidth="581.0" style="-fx-background-color: #24324033;">
+         <effect>
+            <Bloom />
+         </effect>
+         <Text fill="#cf2d2dab" layoutX="505.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ZenVeus">
+            <font>
+               <Font name="DejaVu Sans Mono" size="16.0" />
+            </font>
+            <effect>
+               <Bloom />
+            </effect>
+         </Text>
+         <Text fx:id="morningText" fill="#cf2d2d" layoutX="23.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning">
+            <font>
+               <Font name="Gayathri Thin" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="timeText" fill="#cf2d2d" layoutX="276.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20:14 ">
+            <font>
+               <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+            </font>
+         </Text>
+      </AnchorPane>
+      <ImageView fitHeight="61.0" fitWidth="94.0" layoutX="455.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/logos/logo-2.png" />
+      </ImageView>
+      <AnchorPane layoutX="13.0" layoutY="233.0" prefHeight="257.0" prefWidth="268.0" style="-fx-background-color: #243240D4; -fx-background-radius: 20px;" />
+      <AnchorPane layoutX="302.0" layoutY="231.0" prefHeight="257.0" prefWidth="268.0" style="-fx-background-color: #243240D4; -fx-background-radius: 20px;" />
+      <AnchorPane layoutX="20.0" layoutY="240.0" prefHeight="257.0" prefWidth="268.0" style="-fx-background-color: #243240D4; -fx-background-radius: 20px;" />
+      <AnchorPane layoutX="12.0" layoutY="52.0" prefHeight="163.0" prefWidth="557.0" style="-fx-background-color: #243240D4; -fx-background-radius: 20px;" />
+      <AnchorPane layoutX="308.0" layoutY="238.0" prefHeight="257.0" prefWidth="268.0" style="-fx-background-color: #243240D4; -fx-background-radius: 20px;" />
+      <AnchorPane layoutX="20.0" layoutY="59.0" prefHeight="163.0" prefWidth="557.0" style="-fx-background-color: #243240D4; -fx-background-radius: 20px;">
+         <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="288.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../image/icons/item-red.png" />
+         </ImageView>
+         <Text fill="#fa5252" layoutX="229.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item">
+            <font>
+               <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+            </font>
+         </Text>
+         <Text fill="#fcfcfc" layoutX="214.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Items :">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Text>
+         <Text fx:id="itemCount" fill="WHITE" layoutX="310.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
+         <Text fx:id="vItemId" fill="#f2f2f2" layoutX="33.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="itemCode" />
+         <Text fx:id="vItemName" fill="#f2f2f2" layoutX="150.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="itemName" />
+         <Text fx:id="vItemSupId" fill="#f2f2f2" layoutX="275.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supId" />
+         <Text fx:id="vItemPrice" fill="#f2f2f2" layoutX="378.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+         <Text fx:id="vItemQntity" fill="#f2f2f2" layoutX="466.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qntity" />
+         <Text fill="WHITE" layoutX="19.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Update Item :">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Text>
+         <TextField layoutX="369.0" layoutY="5.0" nodeOrientation="RIGHT_TO_LEFT" promptText="Search Item" style="-fx-background-color: #EC7063; -fx-background-radius: 10px;">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+         </TextField>
+         <AnchorPane layoutX="15.0" layoutY="7.0" prefHeight="24.0" prefWidth="174.0" style="-fx-background-color: #EC7063; -fx-background-radius: 10px;">
+            <children>
+               <Button alignment="CENTER_RIGHT" layoutX="5.0" layoutY="1.0" mnemonicParsing="false" onAction="#refrashBtn" prefHeight="16.0" prefWidth="166.0" style="-fx-background-color: transpanent;" text="Refresh" textFill="#2d2939">
+                  <font>
+                     <Font name="System Bold" size="10.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            </children>
+         </AnchorPane>
+         <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="36.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/icons/refresh-red.png" />
+            </image>
+         </ImageView>
+      </AnchorPane>
+      <Text fill="#fa5252" layoutX="78.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="182.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/icons/customer-red.png" />
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="68.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Customers :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="vSupCount" fill="WHITE" layoutX="494.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
+      <Text fill="WHITE" layoutX="29.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L. Update Customer :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="vCustId" fill="#f2f2f2" layoutX="105.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CustCode" />
+      <Text fx:id="vCustName" fill="#f2f2f2" layoutX="106.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custName" />
+      <Text fx:id="vCustEmail" fill="#f2f2f2" layoutX="107.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custEmail" />
+      <Text fx:id="vCustAdd" fill="#f2f2f2" layoutX="99.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custAddress" />
+      <Text fx:id="vCustPhone" fill="#f2f2f2" layoutX="105.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custPhone" />
+      <Text fill="#fa5252" layoutX="376.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="471.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../image/icons/supplier-red.png" />
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="367.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Suppliers :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="318.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L. Update Suppliers :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="vSupId" fill="#f2f2f2" layoutX="398.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SupCode" />
+      <Text fx:id="vSupName" fill="#f2f2f2" layoutX="396.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supName" />
+      <Text fx:id="vSupEmail" fill="#f2f2f2" layoutX="397.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supEmail" />
+      <Text fx:id="vSupAdd" fill="#f2f2f2" layoutX="392.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supAddress" />
+      <Text fx:id="vSupPhone" fill="#f2f2f2" layoutX="400.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supPhone" />
+      <Text fx:id="vCustCount" fill="WHITE" layoutX="202.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
+   </AnchorPane>
+</AnchorPane>
