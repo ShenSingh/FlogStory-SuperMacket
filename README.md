@@ -34,7 +34,10 @@ Super Market is a mini JavaFX project aimed at simulating a supermarket manageme
 
 ## Screenshots
 
-Include screenshots of your application in action here.
+![Screenshot from 2024-02-13 15-03-47](https://github.com/Shen8Singh/FlogStory-SuperMacket/assets/143357867/289a0f1f-4538-467d-a6b2-4f7636377c89)
+![Screenshot from 2024-02-13 15-11-38](https://github.com/Shen8Singh/FlogStory-SuperMacket/assets/143357867/b3158966-e48a-418e-9a29-2e8db464e2fd)
+![Screenshot from 2024-02-13 15-12-36](https://github.com/Shen8Singh/FlogStory-SuperMacket/assets/143357867/2d08a687-abae-444b-a95d-860fef72eebd)
+
 
 ## Contributing
 
