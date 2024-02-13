@@ -4,7 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import lk.ZenVeus.JavaFx.Admin.Admin;
 import lk.ZenVeus.JavaFx.db.Customer;
@@ -43,6 +47,7 @@ public class DashBoardController {
     public Text vSupAdd;
     public Text vSupPhone;
     public Text vCustCount;
+    public AnchorPane dashAnchorPane;
 
     public void initialize(){
         dashUserName.setText(Admin.getuName());
@@ -182,6 +187,7 @@ public class DashBoardController {
     }
     public void customerBtn(ActionEvent actionEvent) throws IOException {
 
+
         Parent rootNode= FXMLLoader.load(getClass().getResource("/View/Customer.fxml"));
         Scene custScene = new Scene(rootNode);
         Stage custStage = new Stage();
@@ -212,15 +218,22 @@ public class DashBoardController {
 
         System.out.println("click");
 
-        try{
-            Desktop.getDesktop().browse(new URL("http://www.google.com").toURI());
-        }
-        catch (Exception e)
-        {}
+        WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+        webEngine.load("https://github.com/Shen8Singh");
+
+        StackPane root = new StackPane();
+        root.getChildren().add(webView);
+
+        Scene scene = new Scene(root, 1000, 800);
+        Stage ss= new Stage();
+        ss.setScene(scene);
+        ss.setTitle("ShenSingh");
+        ss.show();
     }
 
     public void refrashBtn(ActionEvent actionEvent) throws IOException {
-        // //
+
         Stage refrashDash= LoginPageController.getStage();
 
         Parent rootLoding= FXMLLoader.load(getClass().getResource("/View/Loding.fxml"));

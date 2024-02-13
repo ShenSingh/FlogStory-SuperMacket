@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ZenVeus.JavaFx.Controllers.DashBoardController">
+<AnchorPane fx:id="dashAnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ZenVeus.JavaFx.Controllers.DashBoardController">
    <AnchorPane layoutY="-1.0" prefHeight="510.0" prefWidth="225.0" style="-fx-background-color: #EC7063;">
       <ImageView fitHeight="101.0" fitWidth="94.0" layoutX="60.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@../image/icons/icons8-user-50.png" />
@@ -174,9 +174,9 @@
          </font>
       </Text>
       <Text fx:id="vCustId" fill="#f2f2f2" layoutX="105.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CustCode" />
-      <Text fx:id="vCustName" fill="#f2f2f2" layoutX="106.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custName" />
-      <Text fx:id="vCustEmail" fill="#f2f2f2" layoutX="107.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custEmail" />
-      <Text fx:id="vCustAdd" fill="#f2f2f2" layoutX="99.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custAddress" />
+      <Text fx:id="vCustName" fill="#f2f2f2" layoutX="105.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custName" />
+      <Text fx:id="vCustEmail" fill="#f2f2f2" layoutX="105.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custEmail" />
+      <Text fx:id="vCustAdd" fill="#f2f2f2" layoutX="105.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custAddress" />
       <Text fx:id="vCustPhone" fill="#f2f2f2" layoutX="105.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="custPhone" />
       <Text fill="#fa5252" layoutX="376.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier">
          <font>
@@ -197,10 +197,10 @@
          </font>
       </Text>
       <Text fx:id="vSupId" fill="#f2f2f2" layoutX="398.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SupCode" />
-      <Text fx:id="vSupName" fill="#f2f2f2" layoutX="396.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supName" />
-      <Text fx:id="vSupEmail" fill="#f2f2f2" layoutX="397.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supEmail" />
-      <Text fx:id="vSupAdd" fill="#f2f2f2" layoutX="392.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supAddress" />
-      <Text fx:id="vSupPhone" fill="#f2f2f2" layoutX="400.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supPhone" />
+      <Text fx:id="vSupName" fill="#f2f2f2" layoutX="398.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supName" />
+      <Text fx:id="vSupEmail" fill="#f2f2f2" layoutX="398.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supEmail" />
+      <Text fx:id="vSupAdd" fill="#f2f2f2" layoutX="398.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supAddress" />
+      <Text fx:id="vSupPhone" fill="#f2f2f2" layoutX="398.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supPhone" />
       <Text fx:id="vCustCount" fill="WHITE" layoutX="202.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
    </AnchorPane>
 </AnchorPane>
