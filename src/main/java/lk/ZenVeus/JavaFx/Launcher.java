@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Lonchur extends Application {
+public class Launcher extends Application {
     public static void main(String[] args) {
         launch(args);
     }
